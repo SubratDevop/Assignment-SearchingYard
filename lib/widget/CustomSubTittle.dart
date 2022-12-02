@@ -11,7 +11,7 @@ class  CustomSubTittle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(text,
-    style: GoogleFonts.poppins(fontSize:textSize ?? 17.0,fontWeight: FontWeight.normal,color:textColor ?? Colors.black),
+    style: GoogleFonts.lato(fontSize:textSize ?? 17.0,fontWeight: FontWeight.normal,color:textColor ?? Colors.black),
     );
   }
 }

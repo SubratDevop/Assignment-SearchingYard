@@ -8,7 +8,7 @@ Widget appbar() {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: const [
         Icon(FeatherIcons.menu),
-        Icon(FeatherIcons.shoppingCart),
+        Icon(FeatherIcons.shoppingBag),
       ],
     ),
   );
