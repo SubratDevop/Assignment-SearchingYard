@@ -69,7 +69,7 @@ class _ItemsState extends State<Items> {
                                     color:
                                         itemList[index].isItemSelected == false
                                             ? kItemCardBgColor
-                                            : kSelectedItemCardBgColor,
+                                            : kScaffoldBGColor,
                                   ),
                                 ),
                                 Positioned(
