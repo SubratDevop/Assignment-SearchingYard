@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 20,
                 ),
                 //! appbar
-                appbar(),
+                appbar(context),
                 const SizedBox(
                   height: 20,
                 ),

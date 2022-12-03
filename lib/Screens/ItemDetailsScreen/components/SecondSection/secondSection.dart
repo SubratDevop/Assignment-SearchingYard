@@ -17,7 +17,8 @@ Widget secondSection() {
           color: Colors.white,
           borderRadius: BorderRadius.circular(40),
         ),
-        child: Padding(
+        child:
+         Padding(
           padding: EdgeInsets.symmetric(horizontal: 25, vertical: 25),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -117,6 +118,7 @@ Widget secondSection() {
             ],
           ),
         ),
+    
       ),
     ],
   );

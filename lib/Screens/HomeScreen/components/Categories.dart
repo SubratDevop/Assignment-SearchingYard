@@ -1,3 +1,4 @@
+import 'package:assignment_searchingyard/Screens/ItemDetailsScreen/ItemDetailsScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 
@@ -64,10 +65,11 @@ class _CategorySectionState extends State<CategorySection> {
                                   child: Container(
                                     height: 70,
                                     width: 70,
-                                    color: CategoryList[index].isItemSelected ==
-                                            false
-                                        ? kItemCardBgColor
-                                        : kSelectedItemCardBgColor,
+                                    color:
+                                        CategoryList[index].isItemSelected ==
+                                                false
+                                            ? kItemCardBgColor
+                                            : kSelectedItemCardBgColor,
                                   ),
                                 ),
                                 Positioned(

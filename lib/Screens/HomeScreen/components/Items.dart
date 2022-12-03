@@ -6,6 +6,7 @@ import '../../../Models/CatagoryModel.dart';
 import '../../../Models/itemModel.dart';
 import '../../../widget/CustomSubTittleText.dart';
 import '../../../widget/CustomTittleText.dart';
+import '../../ItemDetailsScreen/ItemDetailsScreen.dart';
 
 class Items extends StatefulWidget {
   Items({Key? key}) : super(key: key);
@@ -54,6 +55,13 @@ class _ItemsState extends State<Items> {
                           itemList[i].isItemSelected = false;
                         }
                         itemList[index].isItemSelected = true;
+
+                        Future.delayed(Duration(seconds: 1), () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                                builder: (context) => ItemDetailsScreen()),
+                          );
+                        });
                       });
                     },
                     child: Row(
@@ -100,10 +108,8 @@ class _ItemsState extends State<Items> {
             height: 60,
             width: 60,
             decoration: BoxDecoration(
-             
                 border: Border.all(color: Colors.grey.shade400),
-                borderRadius: BorderRadius.circular(30)
-                ),
+                borderRadius: BorderRadius.circular(30)),
             child: Icon(
               FeatherIcons.plus,
               size: 30,
