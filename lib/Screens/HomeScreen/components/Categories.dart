@@ -14,6 +14,18 @@ class CategorySection extends StatefulWidget {
 }
 
 class _CategorySectionState extends State<CategorySection> {
+  
+  initializedData() {
+    CategoryList[0].isItemSelected = true;
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    initializedData();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -61,9 +73,9 @@ class _CategorySectionState extends State<CategorySection> {
                                 ),
                                 Positioned(
                                   bottom: 10,
-                                  top:    10,
-                                  right:  10,
-                                  left:   10,
+                                  top: 10,
+                                  right: 10,
+                                  left: 10,
                                   child: ClipOval(
                                     child: Container(
                                       // height: 40,
@@ -88,8 +100,8 @@ class _CategorySectionState extends State<CategorySection> {
                                   text: CategoryList[index]
                                       .Categoryname
                                       .toString(),
-                                  textSize: 13,
-                                  textColor: 
+                                  textSize: 12,
+                                  textColor:
                                       CategoryList[index].isItemSelected ==
                                               false
                                           ? kUnSelectedTextColor
@@ -113,7 +125,7 @@ class _CategorySectionState extends State<CategorySection> {
             padding: EdgeInsets.only(left: 10.0),
             child: Icon(
               FeatherIcons.search,
-              size: 30,
+              size: 40,
             ),
           ),
         ],

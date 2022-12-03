@@ -45,52 +45,67 @@ Widget ItemDetailsCircle() {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      CustomeTittleText(text: "Dried Appricots",textColor:Colors.white) ,
-                      
-                       const SizedBox(
+                      CustomeTittleText(
+                          text: "Dried apricots", textColor: Colors.white),
+                      const SizedBox(
                         height: 15,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
-                        children:  [
-                           CustomeTittleText(
-                            text: "\$ 9.43",
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          CustomeTittleText(
+                            text: "\$9.43 ",
                             textColor: Colors.white,
-                           
                           ),
-                        const  SizedBox(width: 10,),
+
+                          // const  SizedBox(width: 5,),
+                          CustomSubTittle(
+                            text: "/",
+                            textColor: Colors.white,
+                            textSize: 12,
+                          ),
+                          const SizedBox(
+                            width: 5,
+                          ),
+
                           CustomSubTittle(
                             text: "300g",
                             textColor: Colors.white,
-                           
+                            textSize: 10,
                           ),
                         ],
                       ),
-                       const SizedBox(
+                      const SizedBox(
                         height: 15,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: const [
                           Icon(
-                            Icons.star_border_outlined,
+                            Icons.star,
                             color: Colors.white,
+                            size: 13,
                           ),
                           Icon(
-                            Icons.star_border_outlined,
+                            Icons.star,
                             color: Colors.white,
+                            size: 13,
                           ),
                           Icon(
-                            Icons.star_border_outlined,
+                            Icons.star,
                             color: Colors.white,
+                            size: 13,
                           ),
                           Icon(
-                            Icons.star_border_outlined,
+                            Icons.star,
                             color: Colors.white,
+                            size: 13,
                           ),
                           Icon(
-                            Icons.star_border_outlined,
+                            Icons.star_half,
                             color: Colors.white,
+                            size: 13,
                           ),
                         ],
                       ),
@@ -99,16 +114,16 @@ Widget ItemDetailsCircle() {
                       ),
                       Container(
                         height: 50,
-                   
-                        decoration: BoxDecoration(color: Colors.white,
-                        borderRadius: BorderRadius.circular(30) ),
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(30)),
                         child: Padding(
                           padding: const EdgeInsets.all(10.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               const Icon(
-                                FeatherIcons.shoppingCart,
+                                Icons.shopping_cart_rounded,
                                 color: Colors.black,
                               ),
                               const SizedBox(

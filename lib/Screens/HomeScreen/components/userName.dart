@@ -15,17 +15,9 @@ Widget userName() {
       const SizedBox(
         height: 20,
       ),
-      Row(
-        children: [
-          CustomeTittleText(text: "What's today's taste?"),
-          const SizedBox(
-            width: 10,
-          ),
-          const Icon(
-            FeatherIcons.smile,
-            color: Colors.orangeAccent,
-          ),
-        ],
+      CustomeTittleText(text: "What's today's taste?  😋"),
+      const SizedBox(
+        width: 10,
       )
     ],
   );

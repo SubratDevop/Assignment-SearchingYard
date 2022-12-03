@@ -15,6 +15,17 @@ class Items extends StatefulWidget {
 }
 
 class _ItemsState extends State<Items> {
+  initializedData() {
+    itemList[0].isItemSelected = true;
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    initializedData();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -63,18 +74,13 @@ class _ItemsState extends State<Items> {
                                 ),
                                 Positioned(
                                   bottom: 15,
-                                  top:    15,
-                                  left:   15,
-                                  right:  15,
-                                  child:
-                                   
-                                   Image.asset(
-                                    
-                                      itemList[index].itemImage.toString(),
-                                      fit: BoxFit.fitHeight,
-                                    
-                                    ),
-                                  
+                                  top: 15,
+                                  left: 15,
+                                  right: 15,
+                                  child: Image.asset(
+                                    itemList[index].itemImage.toString(),
+                                    fit: BoxFit.fitHeight,
+                                  ),
                                 ),
                               ],
                             ),
@@ -90,8 +96,14 @@ class _ItemsState extends State<Items> {
               },
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.only(left: 10.0),
+          Container(
+            height: 60,
+            width: 60,
+            decoration: BoxDecoration(
+             
+                border: Border.all(color: Colors.grey.shade400),
+                borderRadius: BorderRadius.circular(30)
+                ),
             child: Icon(
               FeatherIcons.plus,
               size: 30,

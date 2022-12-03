@@ -10,7 +10,9 @@ class  CustomeTittleText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(text,
-    style: GoogleFonts.lato(fontSize:textSize ?? 20.0,fontWeight: FontWeight.w800,color:textColor ?? Colors.black),
+    style: TextStyle(
+      fontFamily: "Alexandria",
+      fontSize:textSize ?? 20.0,fontWeight: FontWeight.w700,color:textColor ?? Colors.black),
     );
   }
 }
