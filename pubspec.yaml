@@ -63,7 +63,7 @@ flutter:
   fonts:
     - family: Alexandria
       fonts:
-        - asset: fonts/Alexandria-SemiBold.tff
+        - asset: fonts/Alexandria-SemiBold.ttf
           weight: 600
         - asset: fonts/Alexandria-Bold.ttf
           weight: 700
