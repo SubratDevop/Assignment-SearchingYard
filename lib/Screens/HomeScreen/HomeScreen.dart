@@ -1,12 +1,7 @@
-import 'package:assignment_searchingyard/Constants/Constants.dart';
 import 'package:assignment_searchingyard/Screens/HomeScreen/components/appbar.dart';
 import 'package:assignment_searchingyard/Screens/HomeScreen/components/userName.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_feather_icons/flutter_feather_icons.dart';
-
-import '../../Models/CatagoryModel.dart';
-import '../../widget/CustomSubTittle.dart';
-import '../../widget/CustomeTittleText.dart';
+import '../../Constants/Constants.dart';
 import 'components/Categories.dart';
 import 'components/ItemDetailsCircle.dart';
 import 'components/Items.dart';
@@ -23,20 +18,21 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SingleChildScrollView(
-        physics: const BouncingScrollPhysics(
-            parent: AlwaysScrollableScrollPhysics()),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0),
-          child: Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
+      body: Padding(
+        padding: kHorizontalSpacing,
+        child: Container(
+          // color: Colors.red,
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+          child: SingleChildScrollView(
+            physics: const BouncingScrollPhysics(
+                parent: AlwaysScrollableScrollPhysics()),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
-                  height: 60,
+                  height: 50,
                 ),
                 //! appbar
                 appbar(),
@@ -60,6 +56,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 30,
                 ),
                 Items(),
+                const SizedBox(
+                  height: 20,
+                ),
               ],
             ),
           ),
