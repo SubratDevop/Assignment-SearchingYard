@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 
-import '../../../widget/CustomSubTittle.dart';
-import '../../../widget/CustomeTittleText.dart';
+import '../../../widget/CustomSubTittleText.dart';
+import '../../../widget/CustomTittleText.dart';
 
 Widget userName() {
   return Column(

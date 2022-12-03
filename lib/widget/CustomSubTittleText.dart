@@ -15,9 +15,10 @@ class CustomSubTittle extends StatelessWidget {
       text,
       style: TextStyle(
           fontFamily: "Alexandria",
+          
           fontSize: textSize ?? 17.0,
           fontWeight: FontWeight.normal,
-          color: textColor ?? Colors.black),
+          color: textColor ?? Color(0xFF412115)),
     );
   }
 }

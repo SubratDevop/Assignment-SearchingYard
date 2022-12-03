@@ -4,8 +4,8 @@ import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import '../../../Constants/Constants.dart';
 import '../../../Models/CatagoryModel.dart';
 import '../../../Models/itemModel.dart';
-import '../../../widget/CustomSubTittle.dart';
-import '../../../widget/CustomeTittleText.dart';
+import '../../../widget/CustomSubTittleText.dart';
+import '../../../widget/CustomTittleText.dart';
 
 class Items extends StatefulWidget {
   Items({Key? key}) : super(key: key);

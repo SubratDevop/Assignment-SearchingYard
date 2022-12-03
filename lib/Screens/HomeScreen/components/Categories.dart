@@ -3,8 +3,8 @@ import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 
 import '../../../Constants/Constants.dart';
 import '../../../Models/CatagoryModel.dart';
-import '../../../widget/CustomSubTittle.dart';
-import '../../../widget/CustomeTittleText.dart';
+import '../../../widget/CustomSubTittleText.dart';
+import '../../../widget/CustomTittleText.dart';
 
 class CategorySection extends StatefulWidget {
   CategorySection({Key? key}) : super(key: key);
@@ -14,7 +14,6 @@ class CategorySection extends StatefulWidget {
 }
 
 class _CategorySectionState extends State<CategorySection> {
-  
   initializedData() {
     CategoryList[0].isItemSelected = true;
   }
@@ -126,6 +125,7 @@ class _CategorySectionState extends State<CategorySection> {
             child: Icon(
               FeatherIcons.search,
               size: 40,
+              color: kIconColor,
             ),
           ),
         ],

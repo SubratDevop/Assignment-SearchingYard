@@ -1,7 +1,6 @@
-import 'package:assignment_searchingyard/Constants/Constants.dart';
 import 'package:flutter/material.dart';
-
-import 'components/BottomNavSection.dart';
+import '../../Constants/Constants.dart';
+import 'components/body.dart';
 
 class ItemDetailsScreen extends StatefulWidget {
   ItemDetailsScreen({Key? key}) : super(key: key);
@@ -13,29 +12,8 @@ class ItemDetailsScreen extends StatefulWidget {
 class _ItemDetailsScreenState extends State<ItemDetailsScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: kScaffoldBGColor,
-      //! bottom Section
-      bottomNavigationBar: const BottomNavSection(),
-      body: SingleChildScrollView(
-        child: Stack(
-          children: [
-        Container(
-          height: 500,
-          color: Colors.white,
-        ),
-        Positioned(
-          bottom: -30,
-          left: 0,
-          right: 0,
-          child: Container(
-            height: 100,
-            color: Colors.green,
-          ),
-        ),
-          ],
-        ),
-      ),
-    );
+    return const Scaffold(
+        
+        body: const Body());
   }
 }

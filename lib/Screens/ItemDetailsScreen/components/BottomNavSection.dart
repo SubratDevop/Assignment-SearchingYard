@@ -1,4 +1,4 @@
-import 'package:assignment_searchingyard/widget/CustomSubTittle.dart';
+import 'package:assignment_searchingyard/widget/CustomSubTittleText.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 
@@ -9,40 +9,36 @@ class BottomNavSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 130,
-      color: kBlack,
-      child: Padding(
-        padding: EdgeInsets.only(left: 20 , right: 20,top: 40),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                const Icon(
-                  FeatherIcons.shoppingBag,
-                  color: Colors.white,
-                ),
-                const SizedBox(
-                  width: 20,
-                ),
-                CustomSubTittle(
-                  text: "Cart",
-                  textColor: Colors.white,
-                )
-              ],
-            ),
-            Container(
-              height: 55,
-              width: 40,
-              child: Image.asset(
-                "Assets/images/Dried_appricots.jpg",
-                fit: BoxFit.cover,
+    return Padding(
+      padding: EdgeInsets.only(left: 20 , right: 20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              const Icon(
+                FeatherIcons.shoppingBag,
+                color: Colors.white,
               ),
+              const SizedBox(
+                width: 20,
+              ),
+              CustomSubTittle(
+                text: "Cart",
+                textColor: Colors.white,
+              )
+            ],
+          ),
+          Container(
+            height: 55,
+            width: 40,
+            child: Image.asset(
+              "Assets/images/Dried_appricots.jpg",
+              fit: BoxFit.cover,
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

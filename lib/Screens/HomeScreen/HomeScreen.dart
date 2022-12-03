@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
-                  height: 50,
+                  height: 20,
                 ),
                 //! appbar
                 appbar(),
@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 const SizedBox(
                   height: 30,
                 ),
-                ItemDetailsCircle(),
+                ItemDetailsCircle(context),
                 //! Item Section
                 const SizedBox(
                   height: 30,
